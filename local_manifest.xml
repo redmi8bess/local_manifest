@@ -29,4 +29,10 @@
             remote="github" 
             revision="12.1-unified"/>
   
+  <!-- SEPolicy -->
+   <project path="device/qcom/sepolicy-legacy-um"
+            name="PixelExperience/device_qcom_sepolicy-legacy-um"
+            remote="github"
+            revision="twelve"/>
+  
 <manifest>
