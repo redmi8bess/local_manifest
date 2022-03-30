@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Trees -->
- <project path="device/10or/G" name="RahulPalXDA/android_device_10or_G.git" remote="github" revision="lineage-18.1" />
- <project path="device/10or/msm8953-common" name="RahulPalXDA/android_device_10or_msm8953-common.git" remote="github" revision="lineage-18.1" />
- <project path="vendor/10or" name="RahulPalXDA/android_vendor_10or.git" remote="github" revision="master" />
- <project path="kernel/10or/G" name="10orDevs/android_kernel_10or_G-4.9.git" remote="github" revision="lineage-18.1" /><?xml version="1.0" encoding="UTF-8"?>
+  <!-- Kernels -->
+   <project path="kernel/xiaomi/sdm439" 
+            name="mi-sdm439/android_kernel_xiaomi_sdm439.git"
+            remote="github" 
+            revision="a12/main"/>
+
+<!-- Device Tree and Common Device Tree -->
+   <project path="device/xiaomi/mi439" 
+            name="mi-sdm439/android_device_xiaomi_mi439.git"
+            remote="github" 
+            revision="lineage-18.1"/>
+   
+   <project path="device/xiaomi/sdm439-common" 
+            name="hsx02/device_xiaomi_sdm439-common.git" 
+            remote="github" 
+            revision="12.1-unified"/>
+  
+<!-- Vendor Trees and Common Vendor Tree -->
+   <project path="vendor/xiaomi/mi439" 
+            name="mi-sdm439/proprietary_vendor_xiaomi_mi439.git" 
+            remote="github"
+            revision="lineage-18.1"/>   
+ 
+   <project path="vendor/xiaomi/sdm439-common"  
+            name="hsx02/vendor_xiaomi_mi439-common.git" 
+            remote="github" 
+            revision="12.1-unified"/>
   
 <manifest>
