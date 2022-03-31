@@ -49,12 +49,7 @@
            remote="Estate" 
            revision="12.0" />
         
- <!-- SEPolicy -->
-   <project path="device/qcom/sepolicy-legacy-um"
-            name="PixelExperience/device_qcom_sepolicy-legacy-um"
-            remote="pxl"
-            revision="twelve"/>
-
+  
  <!-- Fixes -->
  <!--device settings-->
 <remove-project name="LineageOS/android_packages_resources_devicesettings" />
