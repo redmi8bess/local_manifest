@@ -51,12 +51,6 @@
         
   
  <!-- Fixes -->
- <!--device settings-->
-<remove-project name="LineageOS/android_packages_resources_devicesettings" />
-           <project path="packages/resources/devicesettings" 
-                    name="packages_resources_devicesettings" 
-                    remote="hsx02" 
-                    revision="lineage-18.1" />
           
         <!--display bringup-->
         <remove-project name="LineageOS/android_hardware_qcom_display" />
