@@ -32,22 +32,22 @@
  <!-- Device Tree and Common Device Tree -->
    <project path="android/device/xiaomi/mi439" 
             name="android_device_xiaomi_mi439" 
-            remote="Estate" 
-            revision="lineage-18.1"/>
+            remote="mi439" 
+            revision="lineage-19.1"/>
    <project path="android/device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common" 
             remote="mi439" 
             revision="19.1"/>
   
  <!-- Vendor Trees and Common Vendor Tree -->
-      <project path="vendor/xiaomi/mi439"         
+ <project path="vendor/xiaomi/mi439"         
            name="vendor_xiaomi_mi439"      
-           remote="Estate" 
+           remote="Chuck" 
            revision="12.0" />
-      <project path="vendor/xiaomi/sdm439-common"  
+  <project path="vendor/xiaomi/sdm439-common"  
            name="vendor_xiaomi_sdm439-common" 
-           remote="Estate" 
-           revision="12.0" />
+           remote="Chuck" 
+           revision="12-R" />
         
   
  <!-- Fixes -->
