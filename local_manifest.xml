@@ -14,7 +14,7 @@
   <remote name="LOS"
            fetch="https://github.com/LineageOS" />
   <remote  name="mi439"
-           fetch="https://github.com/xiaomi-sdm439-devs" />
+           fetch="https://github.com/mi-sdm439" />
   <remote name="mi2"
            fetch="https://github.com/mi-msm8937" />
   <remote  name="hsx02"
@@ -34,10 +34,10 @@
             name="android_device_xiaomi_mi439" 
             remote="Estate" 
             revision="lineage-18.1"/>
-   <project path="device/xiaomi/sdm439-common" 
+   <project path="android/device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common" 
-            remote="Estate" 
-            revision="12-R"/>
+            remote="mi439" 
+            revision="19.1"/>
   
  <!-- Vendor Trees and Common Vendor Tree -->
       <project path="vendor/xiaomi/mi439"         
