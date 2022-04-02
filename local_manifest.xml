@@ -13,7 +13,7 @@
            fetch="https://github.com/PixelExperience" />
   <remote name="LOS"
            fetch="https://github.com/LineageOS" />
-    <remote name="lighthouse"
+  <remote name="lighthouse"
            fetch="https://github.com/lighthouse-os" />
   <remote  name="mi439"
            fetch="https://github.com/mi-sdm439" />
