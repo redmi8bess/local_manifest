@@ -6,7 +6,7 @@
            fetch="https://github.com/Chuck439" />
   <remote  name="Chuck"
            fetch="https://github.com/ChuckProjekt" />"
-  <remote  name="mamt"
+  <remote  name="arrow"
            fetch="https://github.com/ArrowOS" />
   <remote name="pxl"
            fetch="https://github.com/PixelExperience" />
@@ -27,7 +27,6 @@
            remote="mi439" 
            revision="a12/main"  
            clone-depth="1"/>
-  <!-- Just use whatever you want for now, but remember to add the legacy omx patch! -->
 
  <!-- Device Trees and Common Vendor Tree -->
    <project path="android/device/xiaomi/mi439"        
@@ -49,16 +48,45 @@
            remote="Chuck" 
            revision="12-R" />
   
-  <!-- Replacements -->
-  <remove-project name="android_packages_apps_FMRadio" />
-  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="Chuck439" revision="lineage-18.1"/>
-  <remove-project name="android_vendor_arrow"  />
-  <project path="vendor/arrow" name="android_vendor_arrow" remote="Chuck439" revision="arrow-12.0"  />
+<!-- Fixes and Replacements -->
+  
+<!-- WLAN -->
+   <remove-project name="android_hardware_qcom_wlan"/>
+       <project path="hardware/qcom-caf/wlan" 
+            name="android_hardware_qcom-caf_wlan" 
+            remote="lazr" 
+            revision="12"/>
+          
+<!-- Device Settings -->
+    <remove-project name="android_packages_resources_devicesettings"/>
+        <project path="packages/resources/devicesettings"
+            name="packages_resources_devicesettings"
+            remote="LOS" 
+            revision="lineage-19.1"/>
 
-  <!-- hals -->
-  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" remote="Chuck" revision="9.6.2"/>
-  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" remote="Chuck" revision="9.6.2" />
-  <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" remote="Chuck" revision="9.6.2" />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="Chuck" revision="twelve"  />
+<!--Antradio Library-->
+    <project path="external/ant-wireless/antradio-library" 
+             name="external_ant-wireless_antradio-library" 
+             remote="pxl" 
+             revision="twelve"/>
+        
+<!--FM Radio-->
+    <project path="packages/apps/FMRadio" 
+             name="packages_apps_FMRadio" 
+             remote="mi439" 
+             revision="lineage-18.1"/> -->
+  
+<!-- hals -->
+    <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" remote="Chuck" revision="9.6.2"/>
+    <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" remote="Chuck" revision="9.6.2" />
+    <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" remote="Chuck" revision="9.6.2" />
+    <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="Chuck" revision="twelve"  />
+  
+<!-- Arrow Vendor Replacement -->
+    <remove-project name="android_vendor_arrow" />
+        <project path="vendor/arrow" 
+            name="android_vendor_arrow" 
+            revision="arrow-12.0" 
+            remote="arrow" />
 
 </manifest>
