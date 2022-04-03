@@ -11,7 +11,7 @@
            fetch="https://github.com/PixelExperience" />
   <remote name="LOS"
            fetch="https://github.com/LineageOS" />
-  <remote name="lighthouse"
+  <remote name="light"
            fetch="https://github.com/lighthouse-os" />
   <remote  name="mi439"
            fetch="https://github.com/mi-sdm439" />
@@ -90,6 +90,6 @@
         <project path="vendor/lighthouse" 
             name="vendor_lighthouse" 
             revision="sailboat_L1" 
-            remote="lighthouse" />
+            remote="light" />
      
 </manifest>
