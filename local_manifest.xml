@@ -6,7 +6,7 @@
            fetch="https://github.com/Chuck439" />
   <remote  name="Chuck"
            fetch="https://github.com/ChuckProjekt" />"
-  <remote  name="arrow"
+  <remote  name="arros"
            fetch="https://github.com/ArrowOS" />
   <remote name="pxl"
            fetch="https://github.com/PixelExperience" />
@@ -87,6 +87,6 @@
         <project path="vendor/arrow" 
             name="android_vendor_arrow" 
             revision="arrow-12.0" 
-            remote="arrow" />
+            remote="arros" />
 
 </manifest>
