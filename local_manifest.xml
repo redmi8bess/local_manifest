@@ -34,8 +34,8 @@
  <!-- Device Tree and Common Device Tree -->
    <project path="android/device/xiaomi/mi439" 
             name="android_device_xiaomi_mi439" 
-            remote="mi439" 
-            revision="lineage-19.1"/>
+            remote="Estate" 
+            revision="pe-12"/>
    <project path="android/device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common" 
             remote="mi439" 
@@ -84,13 +84,13 @@
     <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" remote="Chuck" revision="9.6.2"/>
     <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" remote="Chuck" revision="9.6.2" />
     <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" remote="Chuck" revision="9.6.2" />
-    <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="Chuck" revision="twelve"  />
+    <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="pxl" revision="twelve"  />
   
-  <!-- LineageOS Vendor Replacement -->
-    <remove-project name="android_vendor_lineage" />
-        <project path="vendor/lineage" 
-            name="android_vendor_lineage" 
-            revision="lineage-19.1" 
-            remote="LOS" />
+  <!-- Aosp Vendor Replacement -->
+    <remove-project name="vendor_aosp" />
+        <project path="vendor/aosp" 
+            name="vendor_aosp" 
+            revision="twelve" 
+            remote="pxl" />
           
 </manifest>
